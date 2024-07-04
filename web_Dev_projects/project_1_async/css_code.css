@@ -2,6 +2,27 @@ body{
     background-color: rgb(66, 64, 64);
 }
 .h_text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(236, 246, 255);
 }
-d
+#start{
+    display: flex;
+    font-size: larger;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-color: rgb(109, 244, 100);
+    background-color: chartreuse;
+    border-radius: 19px;
+    padding-inline: 99px;
+    
+}
+#stop{
+    display: flex;
+    font-size: larger;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-color: rgb(223, 113, 113);
+    background-color: rgb(231, 34, 34);
+    border-radius: 19px;
+    padding-inline: 99px;
+    margin-left: 50px;
+    
+}

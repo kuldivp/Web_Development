@@ -1,4 +1,5 @@
 // setTimeout examples
+/*
 setTimeout(function(){
     console.log("after 2 seconds");
 }, 2000);
@@ -38,3 +39,25 @@ setTimeout(function() {
     clearInterval(intervalID);
     console.log("Interval cleared after 5 seconds.");
 }, 5000);
+*/
+//
+
+let prev_heads = []; // Array to store previous headings for multiple changes
+let act_head;
+
+document.getElementById('start').onclick = () => {
+    act_head = document.getElementsByClassName('h_text')[0]; // Assuming there's only one element with class 'h_text'
+    
+    // Store the current heading text in prev_heads array
+    prev_heads.push(act_head.innerText);
+    
+    // Change the heading text
+    act_head.innerText = 'New Heading Text';
+};
+
+document.getElementById('stop').onclick = () => {
+    if (prev_heads.length > 0) {
+        // Retrieve the last stored heading text and revert
+        act_head.innerText = prev_heads.pop();
+    }
+};
