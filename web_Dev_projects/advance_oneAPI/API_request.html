@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API request</title>
+</head>
+<body style="background-color: rgb(38, 37, 37);color: aliceblue;">
+      <h1 class="h1"></h1>
+      <h2>bio:</h2>
+      <p class="p1"></p>
+</body>
+
+<script>
+    const requestURL= 'https://api.github.com/users/hiteshchoudhary'
+    const xhr=new XMLHttpRequest()
+    xhr.open('GET',requestURL) //it doesnt open through self
+    xhr.onreadystatechange=function(){
+        console.log(xhr.readyState);
+        if(xhr.readyState===4){
+            const data=JSON.parse(this.responseText)
+            let followers = data.followers;
+            let bio = data.bio;
+
+            const elements = document.querySelectorAll('.h1, .p1');
+
+        // Assuming there are only two elements (.h1 and .p1)
+        // Directly set text content for each element
+            elements[0].textContent = `followers: ${followers}`;
+            elements[1].textContent = bio;
+            //for console purpose
+            console.log(data.followers);
+            console.log(data.bio);
+        }
+
+        }
+    
+    console.log("here")
+   xhr.send()                 //so that we have to use send() method
+</script>
+
+
+</html>
