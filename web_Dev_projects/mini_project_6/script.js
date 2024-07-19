@@ -18,6 +18,7 @@ function createpassword() {
     passwordbox.value = password;
 }
 //copying in clipbrd
+
 function copyToClipboard() {
     passwordbox.select();
     document.execCommand("copy");
