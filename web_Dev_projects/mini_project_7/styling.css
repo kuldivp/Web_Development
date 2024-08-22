@@ -21,7 +21,7 @@
     width: 400px;
     padding: 25px 35px;
     text-align: center;
-    
+    border-radius: 5%;
 }
 
 nav {
@@ -36,11 +36,21 @@ nav .circle {
     height: 40px;
     line-height: 40px;
     background: #fff;
-    color: #007bff;
-    /* Text color in blue */
-    box-shadow: 0 5px 10px rgba(0, 123, 255, 0.22);
-    /* Blue shadow */
+    color: #a1d808; /* Text color in blue */
+    box-shadow: 0 5px 10px rgba(0, 123, 255, 0.22); /* Blue shadow */
+    text-align: center; /* Center text horizontally */
+    display: flex; /* Center text vertically */
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
 }
+
+nav .circle:hover {
+    background: #06de2e; /* Deep blue background */
+    color: #e30d0d; /* White text color on hover */
+    box-shadow: 0 5px 10px rgba(0, 123, 255, 0.5); /* Darker blue shadow */
+}
+
 
 .song-img {
     width: 220px;
