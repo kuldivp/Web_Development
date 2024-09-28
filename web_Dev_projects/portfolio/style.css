@@ -1,0 +1,219 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6f6f6;
+    color: #333;
+}
+
+header {
+    background-color: white;
+    padding: 20px 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #666;
+}
+
+.contact-btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #444;
+}
+
+.hero {
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 40px;
+    background-color: #f6f6f6;
+}
+
+
+.intro h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.intro h2 {
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.intro p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #333;
+}
+
+.profile-image {
+   margin-left: 10pxy;
+    width: 200px;
+    height: 23=00px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about-me, .portfolio, footer {
+    padding: 40px;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-me h3, .portfolio h3, footer h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.about-me p, .portfolio p, footer p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.more-button, .resume-button, .view-portfolio {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.more-button:hover, .resume-button:hover, .view-portfolio:hover {
+    background-color: black;
+    color: white;
+}
+
+.project-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 48%;
+    padding: 20px;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #666;
+}
+
+
+
+#skills {
+    background-color: #fff; /* White background for the section */
+    color: #181717; /* Black text color */
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  #skills h2 {
+    text-align: center;
+    margin-left: 15px;
+    font-size: 1,5rem;
+    margin-bottom: 20px;
+    color: #313030;
+  }
+  
+  .skills-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .skills-container h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+   
+    padding-bottom: 5px;
+  }
+  
+  .skills-container ul {
+   
+    list-style-type: none;
+    padding: 0;
+   /* Black border for each list */
+    border-radius: 8px; /* Curved borders */
+    background-color: #f9f9f9; /* Light grey background for lists */
+    padding: 10px;
+    margin: 0; /* Remove margin for lists */
+  }
+  
+  .skills-container ul li { display: flex;
+    margin: 10px 0;
+    font-size: 1.1rem;
+  }
+  
+  .skills-container ul li::before {
+    content: "• "; /* Black bullet points */
+    color: #000;
+    font-size: 1.2rem;
+  }
+  

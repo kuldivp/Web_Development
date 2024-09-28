@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <style>
+        * {
+            background: rgb(95, 95, 95);
+            color: aliceblue;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 20px;
+            background-color: rgb(47, 47, 47);
+            border-radius: 10px;
+        }
+        .form input {
+            padding: 10px;
+            width: 100%;
+            max-width: 300px;
+            border: none;
+            border-radius: 5px;
+            color: aliceblue;
+            background-color: rgb(70, 70, 70);
+        }
+        .form input::placeholder {
+            color: aliceblue;
+        }
+        button{
+            width: 65px;
+            border: none;
+            padding: 6px;
+         background-color: rgb(228, 228, 228);
+            border-radius: 5px;
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <input type="password" id="confirm-password" placeholder="Confirm Password">
+        <input type="email" id="email" placeholder="Email ID">
+        <input type="text" id="phone" placeholder="Phone Number"> 
+        <button onclick="validateForm()">Submit</button>
+    </div>
+
+    <script>
+        function validateForm() {
+            const username = document.getElementById("username").value.trim();
+            const password = document.getElementById("password").value.trim();
+            const confirmPassword = document.getElementById("confirm-password").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const phone = document.getElementById("phone").value.trim();
+
+            if (!username) {
+                alert("Username is required");
+                return false;
+            }
+
+            if (password.length < 6) {
+                alert("Password must be at least 6 characters long");
+                return false;
+            }
+
+            if (password !== confirmPassword) {
+                alert("Passwords do not match");
+                return false;
+            }
+
+            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            if (!emailPattern.test(email)) {
+                alert("Please enter a valid email address");
+                return false;
+            }
+
+            const phonePattern = /^\d{10}$/;
+            if (!phonePattern.test(phone)) {
+                alert("Please enter a valid 10-digit phone number");
+                return false;
+            }
+
+            alert("Form submitted successfully!");
+    
+            return true;
+        }
+    </script>
+</body>
+</html>
