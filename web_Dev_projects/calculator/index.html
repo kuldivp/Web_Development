@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      
+      
+</head>
+<body>
+    <div class="calculator">
+        <h3 style="text-align: center; color: rgb(255, 145, 0); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight:500;"> <br>Calculator</h3>
+        <input type="text" class="display" id="display" disabled>
+        <div>
+            <button class="button" onclick="appendNumber('7')">7</button>
+            <button class="button" onclick="appendNumber('8')">8</button>
+            <button class="button" onclick="appendNumber('9')">9</button>
+            <button class="button operator" onclick="setOperator('/')">/</button>
+        </div>
+        <div>
+            <button class="button" onclick="appendNumber('4')">4</button>
+            <button class="button" onclick="appendNumber('5')">5</button>
+            <button class="button" onclick="appendNumber('6')">6</button>
+            <button class="button operator" onclick="setOperator('*')">*</button>
+        </div>
+        <div>
+            <button class="button" onclick="appendNumber('1')">1</button>
+            <button class="button" onclick="appendNumber('2')">2</button>
+            <button class="button" onclick="appendNumber('3')">3</button>
+            <button class="button operator" onclick="setOperator('-')">-</button>
+        </div>
+        <div>
+            <button class="button double" onclick="appendNumber('0')">0</button>
+            <button class="button" onclick="appendNumber('.')">.</button>
+            <button class="button operator" onclick="setOperator('+')">+</button>
+            <button class="button operator" onclick="calculate()">=</button>
+        </div>
+        <button class="button double operator" onclick="clearDisplay()">C</button>
+        <button class="button toggle-mode" onclick="toggleDarkMode()" > <i class="fa-solid fa-toggle-on"></i>DarkMode
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
