@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "description": "new tour",
+    "status": "todo"
+  },
+  {
+    "id": 2,
+    "description": "Study for the Python certification",
+    "status": "in-progress"
+  },
+  {
+    "id": 3,
+    "description": "Update GitHub portfolio",
+    "status": "done"
+  },
+  {
+    "id": 4,
+    "description": "Plan weekend trip",
+    "status": "todo"
+  },
+  {
+    "id": 5,
+    "description": "Fix bugs in the task tracker CLI",
+    "status": "done"
+  }
+]

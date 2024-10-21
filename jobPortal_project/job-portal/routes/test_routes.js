@@ -1,9 +1,10 @@
-import express from 'express'
+import express from 'express';
+import { testpostcontroller } from '../controllers/test_controller.js';
 
-//router object
+// Create router object
+const router = express.Router();
 
-const router=express.Router()
+// Define routes
+router.post('/test-post', testpostcontroller);
 
-//routese
-
-router.get
+export default router;
