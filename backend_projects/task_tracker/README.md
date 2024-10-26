@@ -2,7 +2,7 @@
 # task tracker
 # link  https://github.com/kuldivp/Web_Development/tree/main/backend_projects/task_tracker
 ### hi, i am kuldeep kumar.
-#### this is my a practice project , i have used nodejs,mongodb,expressjs and api to build this.thank you!
+#### This is my a practice project , i have used nodejs,mongodb,expressjs and api to build this.thank you!
 
 #### Project Description
 
