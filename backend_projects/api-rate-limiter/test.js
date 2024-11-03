@@ -12,7 +12,7 @@ app.use((req, res, next) => limiter.limit(req, res, next));
 app.get('/', (req, res) => {
   res.send("Hello, you haven't hit the limit!");
 });
-//listning
+//listning wr
 app.listen(3000, () => {
   console.log('Server running on port 3000');
 });
