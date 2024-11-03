@@ -1,0 +1,19 @@
+{
+  "name": "safely-flow-request",
+  "version": "1.1.0",
+  "description": "\"a simple package to control on too many request from server so that it can flow safely and stable the backend side system\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "[\"npm\"",
+    "\"API\"",
+    "\"request\"]"
+  ],
+  "author": "\"kuldeep\"",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
